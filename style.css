@@ -3,9 +3,8 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  flex-basis: auto;
 }
 .oImg {
-  height: 500px;
-  flex-grow: 1;
+  height: 40vh;
+  padding: 1px;
 }
