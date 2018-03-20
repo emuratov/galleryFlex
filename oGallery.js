@@ -24,12 +24,12 @@ window.onload = function () {
         if (widthSection > itemsCount) {
             count++;
             itemsCount += itemsAll[i].width;
-            console.log('count ', count, 'width ', itemsCount,'item', itemsAll[i]);
+            // console.log('count ', count, 'width ', itemsCount,'item', itemsAll[i]);
 
         } else
         {
             let itemsMult = (widthSection -5) /itemsCount;
-            console.log('prewI', prewI);
+            // console.log('prewI', prewI);
 
             for (let j = prewI; j < i ; j++){
                 itemsAll[j].style.maxHeight = (itemsMaxHeight * itemsMult) + 'px';
