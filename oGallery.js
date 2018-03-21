@@ -1,7 +1,7 @@
 // https://github.com/emuratov/galleryFlex
 
 const widthSection = 1000;  //px
-const itemsMaxHeight = 400; //px
+const itemsMaxHeight = 350; //px
 const bgColor = 'gray';
 const offsetButtom = '1';   //px
 
