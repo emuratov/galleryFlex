@@ -1,4 +1,4 @@
-const widthSection = 1400;
+const widthSection = 1000;
 const itemsMaxHeight = 400;
 const bgColor = 'gray';
 
@@ -15,6 +15,7 @@ window.onload = function () {
         itemsAll[i].style.maxHeight = itemsMaxHeight + 'px';
         itemsAll[i].style.paddingBottom = 2 + 'px';
     }
+
     let itemsCount =0;
     let count = 0;
     let prewI = 0;
@@ -34,12 +35,15 @@ window.onload = function () {
             i = i-1;
         }
     }
-    let itemsMult;
-    for (let j = prewI; j < itemsAll.length ; j++){
-         itemsMult = (widthSection-2) /itemsCount;
-    }
-    for (let j = prewI; j < itemsAll.length ; j++){
-        itemsAll[j].style.maxHeight = (itemsMaxHeight * itemsMult) + 'px';
+
+    if (itemsAll.length - prewI > 1){
+        let itemsMult;
+        for (let j = prewI; j < itemsAll.length ; j++){
+            itemsMult = (widthSection-2) /itemsCount;
+        }
+        for (let j = prewI; j < itemsAll.length ; j++){
+            itemsAll[j].style.maxHeight = (itemsMaxHeight * itemsMult) + 'px';
+        }
     }
 }
 
