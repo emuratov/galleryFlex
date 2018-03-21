@@ -1,12 +1,16 @@
 // https://github.com/emuratov/galleryFlex
 
-const widthSection = 1000;  //px
-const itemsMaxHeight = 350; //px
+let widthSection = 1000;  //px
+let itemsMaxHeight = 350; //px
 const bgColor = 'gray';
 const offsetButtom = '1';   //px
 
 
 window.onload = function () {
+    if (document.body.offsetWidth < widthSection ) {
+        widthSection = document.body.offsetWidth;
+    }
+
     document.getElementById('oGallery').style.width = widthSection + 'px';
     document.getElementById('oGallery').style.backgroundColor = bgColor;
     document.getElementById('oGallery').style.display = 'flex';
@@ -49,4 +53,8 @@ window.onload = function () {
             itemsAll[j].style.maxHeight = (itemsMaxHeight * itemsMult) + 'px';
         }
     }
+}
+
+window.onclick = function (ev) {
+    console.log('click');
 }
