@@ -61,7 +61,6 @@ window.onclick = function (ev) {
     document.getElementById('picBig').style.position = 'absolute';
 
 
-
     console.log(ev.target.src);
     let picBig = document.getElementById('picBig');
     picBig.src = ev.target.src;
