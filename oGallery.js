@@ -58,7 +58,9 @@ window.onload = function () {
 window.onclick = function (ev) {
     document.getElementById('picBig').style.width = widthSection + 'px';
     document.getElementById('picBig').style.zIndex = 9999;
-    document.getElementById('picBig').style.position = 'absolute';
+    document.getElementById('picBig').style.height = '100vh';
+    document.getElementById('picBig').style.position = 'fixed';
+
 
 
     console.log(ev.target.src);
